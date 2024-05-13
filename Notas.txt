@@ -5,7 +5,9 @@ https://github.com/johnrickman/LiquidCrystal_I2C
 Para el termopar:
 https://randomnerdtutorials.com/arduino-k-type-thermocouple-max6675/
 
-Configuracion NI WEB SERVER
+Botón ON OFF
+https://arduinogetstarted.com/tutorials/arduino-button-library#content_how_to_install_library
 
+Configuracion NI WEB SERVER
 https://192.168.131.128/
 
