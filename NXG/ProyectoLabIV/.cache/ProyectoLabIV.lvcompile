@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JobList>
+  <Job OutputType="WebApplication">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
+      <BuildId>4b82abc4-c7e1-4d74-a4b0-570298f2d6d4</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
+      <BuildId>4b82abc4-c7e1-4d74-a4b0-570298f2d6d4</BuildId>
+    </RootBuildId>
+    <OutputPath>Builds\Application IV_Web Server</OutputPath>
+    <BuildName>Application IV</BuildName>
+    <State>Failed</State>
+    <LastTotalTime>00:00:00</LastTotalTime>
+    <StartTime>2024-05-12T02:35:48.3836621Z</StartTime>
+    <HasChild>False</HasChild>
+    <IsStale>True</IsStale>
+    <QualifiedName></QualifiedName>
+    <HintEnvoy></HintEnvoy>
+  </Job>
+  <Job OutputType="WebApplication">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
+      <BuildId>68318c02-018c-41e4-81f2-784c85822386</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
+      <BuildId>68318c02-018c-41e4-81f2-784c85822386</BuildId>
+    </RootBuildId>
+    <OutputPath>Builds\Application IV_Web Server</OutputPath>
+    <BuildName>Application IV</BuildName>
+    <State>Failed</State>
+    <LastTotalTime>00:00:01</LastTotalTime>
+    <StartTime>2024-05-12T02:36:08.7745303Z</StartTime>
+    <HasChild>False</HasChild>
+    <IsStale>True</IsStale>
+    <QualifiedName></QualifiedName>
+    <HintEnvoy></HintEnvoy>
+  </Job>
+  <Job OutputType="WebApplication">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
+      <BuildId>c9bb53e0-8f0c-486d-bce7-58467977a715</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
+      <BuildId>c9bb53e0-8f0c-486d-bce7-58467977a715</BuildId>
+    </RootBuildId>
+    <OutputPath>Builds\Application IV_Web Server</OutputPath>
+    <BuildName>Application IV</BuildName>
+    <State>Failed</State>
+    <LastTotalTime>00:00:00</LastTotalTime>
+    <StartTime>2024-05-12T02:36:20.5988338Z</StartTime>
+    <HasChild>False</HasChild>
+    <IsStale>True</IsStale>
+    <QualifiedName></QualifiedName>
+    <HintEnvoy></HintEnvoy>
+  </Job>
+  <Job OutputType="WebApplication">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
+      <BuildId>5c4ae81d-b9b7-4c4d-8e96-e23ea66ca9aa</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
+      <BuildId>5c4ae81d-b9b7-4c4d-8e96-e23ea66ca9aa</BuildId>
+    </RootBuildId>
+    <OutputPath>Builds\Application IV_Web Server</OutputPath>
+    <BuildName>Application IV</BuildName>
+    <State>Failed</State>
+    <LastTotalTime>00:00:00</LastTotalTime>
+    <StartTime>2024-05-12T02:36:22.5664324Z</StartTime>
+    <HasChild>False</HasChild>
+    <IsStale>True</IsStale>
+    <QualifiedName></QualifiedName>
+    <HintEnvoy></HintEnvoy>
+  </Job>
+  <Job OutputType="WebApplication">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
+      <BuildId>93d67a18-8961-44d4-93a8-5ab3c328d51f</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>WebApplication</ComponentSubtypeIdentifier>
+      <BuildId>93d67a18-8961-44d4-93a8-5ab3c328d51f</BuildId>
+    </RootBuildId>
+    <OutputPath>Builds\Application IV_Web Server</OutputPath>
+    <BuildName>Application IV</BuildName>
+    <State>Failed</State>
+    <LastTotalTime>00:00:00</LastTotalTime>
+    <StartTime>2024-05-12T02:36:24.1977109Z</StartTime>
+    <HasChild>False</HasChild>
+    <IsStale>True</IsStale>
+    <QualifiedName></QualifiedName>
+    <HintEnvoy></HintEnvoy>
+  </Job>
+  <Job OutputType="Application">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>Application</ComponentSubtypeIdentifier>
+      <BuildId>d1a7c7f1-308a-4805-84b3-45438a8a58f5</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>Application</ComponentSubtypeIdentifier>
+      <BuildId>d1a7c7f1-308a-4805-84b3-45438a8a58f5</BuildId>
+    </RootBuildId>
+    <OutputPath>Builds\Application_PC\Application.exe\Application.exe</OutputPath>
+    <BuildName>Application</BuildName>
+    <State>Success</State>
+    <LastTotalTime>00:02:45</LastTotalTime>
+    <StartTime>2024-05-12T02:49:23.3262699Z</StartTime>
+    <HasChild>True</HasChild>
+    <IsStale>True</IsStale>
+    <QualifiedName></QualifiedName>
+    <HintEnvoy></HintEnvoy>
+  </Job>
+  <Job OutputType="Application">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>Application</ComponentSubtypeIdentifier>
+      <BuildId>86c93880-d58d-4575-80e9-af4203cb1a2a</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>Application</ComponentSubtypeIdentifier>
+      <BuildId>86c93880-d58d-4575-80e9-af4203cb1a2a</BuildId>
+    </RootBuildId>
+    <OutputPath>Builds\Application_PC\Application.exe\Application.exe</OutputPath>
+    <BuildName>Application</BuildName>
+    <State>Success</State>
+    <LastTotalTime>00:00:26</LastTotalTime>
+    <StartTime>2024-05-12T02:52:22.4003896Z</StartTime>
+    <HasChild>True</HasChild>
+    <IsStale>True</IsStale>
+    <QualifiedName></QualifiedName>
+    <HintEnvoy></HintEnvoy>
+  </Job>
+</JobList>

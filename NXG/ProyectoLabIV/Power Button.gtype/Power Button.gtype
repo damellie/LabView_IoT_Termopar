@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="2AE4553B1FDE0FA6C983DFF57E2E67962E7A1223AD94244A56CA9F1B9B2BE55B15DE7238A954A61D31063DB4332F5C02FAC17438A1703571ACF8B76299B6AEF4" Timestamp="1DAA410A18AFBC3" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.4.0.49575" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.4.0.49575" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.4.0.49575" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.4.0.49575" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.4.0.49575" Name="LabVIEW NXG" Version="5.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="Boolean" Id="29200af2aca043dc84c0e029e1a532ba" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="137214017bba4f75962175ef28f8e54c" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="dc88b1ac5af4fdfa909b05c09f5f9f0" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="1a119d21847647269aabb9ba4b495ebb" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="Boolean" Id="b9379cfa9c4e4f6da4a169992cf5f233" Name="Power Button">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="f7a914a15cf949adaa9c79fc78c77718" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="eb76d3795c024d38bea6727e4cd0e70a" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="a2bbcb3ede1742a0bfa37ba326a0e4c2" Name="Power Button.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="d32f81e75a5044ec9cfe0ff799005aa4" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="765dc6d363a740578f2d814a2a47f7cd" xmlns="http://www.ni.com/MocCommon">
+					<Switch BaseName="[string]Power Button" Height="[float]88" Id="e5896cc786c84d4ab999c14fcd8d72d4" IncludeInCapture="[bool]False" Label="[UIModel]e459dffc72ce407d92921f1ef6002bd3" Left="[float]100" Shape="[SwitchShape]Power" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=b9379cfa9c4e4f6da4a169992cf5f233}" Width="[float]88" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<Label Height="[float]16" Id="e459dffc72ce407d92921f1ef6002bd3" LabelOwner="[UIModel]e5896cc786c84d4ab999c14fcd8d72d4" Left="[float]100" Text="[string]Power Button" Top="[float]80" Width="[float]72" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

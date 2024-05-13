@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="442FBC6842C7404258B6AB97BD4B4BCC0D104B364BD230008F327955A18EABB9D09CE76AC4C4B0CCE26D0B333B3D309F1F01F830A6C81555E9C5A832EE48FCBD" Timestamp="1DAA4331D370936" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.4.0.49575" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.4.0.49575" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.4.0.49575" Name="LabVIEW NXG" Version="5.1.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition Company="NI" DefaultConfigurationName="Default" Id="979e0122101a4d49a02d08fec3977f5b" Product="NI-Skyline" RootNamespaceId="79f82bef80e2414b95d182c9e653e99c" UserVersion="20.5.0" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="85b28fad2464da2b0f48bd10e34412d" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="e527284bd40b4602b9aa442fd283ecf5" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="e5a472e447004879b6415c1dab15a11b" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="8f65e7a9c63c42008289fd09d4be56ba" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration Id="cfdf6d4b6a054796bf0829d1f1d47041" Name="Default">
+			<CompilerSymbolTable Id="7c1fa0c8047f4de7a2fb13fafcf07ccb" xmlns="http://www.ni.com/PlatformFramework" />
+			<GLibraryProperties Id="16a7453edbd04e3783f05ff99818b785" />
+			<ComponentItemProperties AssociatedEnvoyId="5ec619b6d501424dbb0f13adc0618002" Exported="True" Id="428382772fa54b53aae0b2aa3b8b32b1" />
+			<ComponentItemProperties AssociatedEnvoyId="f2be7a2d066449bd97b5bccef636c07e" Exported="True" Id="578d438541704d06a7f4d457ff2fee2f" />
+			<ComponentItemProperties AssociatedEnvoyId="7fe8972983b64d1fb72391ed06dee630" Exported="True" Id="ddad6b9f2452412b8fed191256a98972" />
+			<ComponentItemProperties AssociatedEnvoyId="be787d5103884dbf824a3f99b5c3fd3f" Exported="True" Id="e46f76fb79c643fda9d0bdd2dfef4151" />
+			<ComponentItemProperties AssociatedEnvoyId="5a2c4babd5c46aaaa1cfb0f6f4a3a2f" Exported="True" Id="a7341367aaff4f61a02664975634ede6" />
+			<ComponentItemProperties AssociatedEnvoyId="44271d8e868b49a5a1bd231f27645791" Exported="True" Id="65383d96961b4dbda38f52f50ba4ee45" />
+			<ComponentItemProperties AssociatedEnvoyId="56f8723ba22d4cfdbec004c99734d7e9" Exported="True" Id="736ef5cd64c744f78ebf89f9a9f59b98" />
+			<ComponentItemProperties AssociatedEnvoyId="4bcacc4319684886a6606178f12410e9" Exported="True" Id="54bda8ea1ec84526b2804f2452b8b88c" />
+			<ComponentItemProperties AssociatedEnvoyId="daca8eeb41d14aac8c0cdfd320c7b841" Exported="True" Id="8b2b62ddd06b4a36b82521eeb44e1ac7" />
+			<ComponentItemProperties AssociatedEnvoyId="28679995296d4956b87e3f860c3f94eb" Exported="True" Id="7f50ae9e42ec4fd08be66a3d4c68dc60" />
+			<ComponentItemProperties AssociatedEnvoyId="77b94658df684f2a871a7c4495193676" Exported="True" Id="a232111ff996490b9d4fbd49294fa339" />
+			<ComponentItemProperties AssociatedEnvoyId="75d0e45008f04dfcb403ca645988b697" Exported="True" Id="8d54bec2e0994368b4f714512dd8b306" />
+			<ComponentItemProperties AssociatedEnvoyId="fe517581be844c2c85f8f4e58b3165eb" Exported="True" Id="708eb4cde5d940c9a7a34a0ec2f979be" />
+			<ComponentItemProperties AssociatedEnvoyId="3a9a133fcec741e99abc0f17a88ccd19" Exported="True" Id="3c173f5a2c84980b0030c5b2628f118" />
+			<ComponentItemProperties AssociatedEnvoyId="eb81269d9a674a90832756cb7236cb98" Exported="True" Id="7fdc4a60ff16436eb0692c269f321cd1" />
+			<ComponentItemProperties AssociatedEnvoyId="eb78253fa1814bb0899b81bf73396085" Exported="True" Id="1b1dbbf43a8440e3a227c77bb50c75d1" />
+			<ComponentItemProperties AssociatedEnvoyId="1dc623cdd29e4820849cb5130ccf848b" Exported="True" Id="99a61485b7964966ad8acecc0c0f0345" />
+			<ComponentItemProperties AssociatedEnvoyId="8cd7faaff4e64f12beb90a05b234ff51" Exported="True" Id="e489eff577a94aa4bc63649a5b11608a" />
+			<ComponentItemProperties AssociatedEnvoyId="c9731b6c1640438aa8615638ff22b694" Exported="True" Id="ac1402d7f1e94d059c0ce1dbbc63e235" />
+			<ComponentItemProperties AssociatedEnvoyId="48f1c5b8d13349fea92b6032c1ede921" Exported="True" Id="6b5213f77ead4eb0a38fbb8c5f89ad4c" />
+			<ComponentItemProperties AssociatedEnvoyId="d23fb4855e904436bb14219eabc19977" Exported="True" Id="9fbf258bf32b4c67b42aa50e844acbd5" />
+			<ComponentItemProperties AssociatedEnvoyId="6d23aaaf97074f64b5fe8e72cf1c2c9f" Exported="True" Id="36c6242a41814fbbb75c3a690baa75dd" />
+			<ComponentItemProperties AssociatedEnvoyId="51a902a11fc048529d20a8e368c9e920" Exported="True" Id="5791293222434c558f16ffd72e8acabe" />
+			<ComponentItemProperties AssociatedEnvoyId="b1d19589e763465eace782ec4a79e753" Exported="True" Id="9f07e25add7540c28491a7acf9659629" />
+			<ComponentItemProperties AssociatedEnvoyId="d4931bdfa4b84133a9163d3486ff8895" Exported="True" Id="6bcbd28cdf01406ba2e92bf19164c872" />
+			<ComponentItemProperties AssociatedEnvoyId="548d8b231c0b4bc4b503a8bcd6b9547c" Exported="True" Id="934ac02c418b4d60983397786fb2def7" />
+			<ComponentItemProperties AssociatedEnvoyId="c477cb26fdb44c91b1a1b00a0a75a8b2" Exported="True" Id="789c1f410a02430086f4bc0b36bcc880" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="283ed0bdae9e419dac115e7776771d79" Id="5e34ea993fc8485ca2a20700a25a3980" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="492e671b5653488ab7eaea9c98152a97" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="9ae6b861b5414bd0bdb6d9b1835d1bbb" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="43d106f12ddd4f35a4b9808050bb4948" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="5bbd919f8dfd41be9df9d3ee7306126f" Name="NI">
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="8befd1d49ca491ab45d4284e0ee9a78" Name="Skyline">
+					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="79f82bef80e2414b95d182c9e653e99c" Name="Configuration">
+						<SourceFileReference Bindings="EnvoyManager" Id="5ec619b6d501424dbb0f13adc0618002" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Auto Configuration.gtype" StoragePath="Auto Configuration.gtype\Auto Configuration.gtype" />
+						<SourceFileReference Bindings="EnvoyManager" Id="f2be7a2d066449bd97b5bccef636c07e" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Configuration.gtype" StoragePath="Configuration.gtype\Configuration.gtype" />
+						<SourceFileReference Bindings="EnvoyManager" Id="7fe8972983b64d1fb72391ed06dee630" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Default Configuration.gtype" StoragePath="Default Configuration.gtype\Default Configuration.gtype" />
+						<SourceFileReference Bindings="EnvoyManager" Id="be787d5103884dbf824a3f99b5c3fd3f" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Default Refcount Store Action.gtype" StoragePath="Default Refcount Store Action.gtype\Default Refcount Store Action.gtype" />
+						<SourceFileReference Id="5a2c4babd5c46aaaa1cfb0f6f4a3a2f" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="base64.gvi" StoragePath="base64.gvi" />
+						<SourceFileReference Id="44271d8e868b49a5a1bd231f27645791" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Check In Session.gvi" StoragePath="Check In Session.gvi" />
+						<SourceFileReference Id="56f8723ba22d4cfdbec004c99734d7e9" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Check Out Session.gvi" StoragePath="Check Out Session.gvi" />
+						<SourceFileReference Id="4bcacc4319684886a6606178f12410e9" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Close Configuration.gvi" StoragePath="Close Configuration.gvi" />
+						<SourceFileReference Id="daca8eeb41d14aac8c0cdfd320c7b841" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Close Default Configuration.gvi" StoragePath="Close Default Configuration.gvi" />
+						<SourceFileReference Id="28679995296d4956b87e3f860c3f94eb" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Configuration File Cache.gvi" StoragePath="Configuration File Cache.gvi" />
+						<SourceFileReference Id="77b94658df684f2a871a7c4495193676" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Default Configuration Refcount Store.gvi" StoragePath="Default Configuration Refcount Store.gvi" />
+						<SourceFileReference Id="75d0e45008f04dfcb403ca645988b697" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Find HTTP Configuration By Id.gvi" StoragePath="Find HTTP Configuration By Id.gvi" />
+						<SourceFileReference Id="fe517581be844c2c85f8f4e58b3165eb" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Get Session ID.gvi" StoragePath="Get Session ID.gvi" />
+						<SourceFileReference Id="3a9a133fcec741e99abc0f17a88ccd19" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Get Skyline Data Directory.gvi" StoragePath="Get Skyline Data Directory.gvi" />
+						<SourceFileReference Id="eb81269d9a674a90832756cb7236cb98" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Initialize From Auto Configuration.gvi" StoragePath="Initialize From Auto Configuration.gvi" />
+						<SourceFileReference Id="eb78253fa1814bb0899b81bf73396085" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open Configuration (Desktop).gvi" StoragePath="Open Configuration (Desktop).gvi" />
+						<SourceFileReference Id="1dc623cdd29e4820849cb5130ccf848b" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open Configuration API Key (Desktop).gvi" StoragePath="Open Configuration API Key (Desktop).gvi" />
+						<SourceFileReference Id="8cd7faaff4e64f12beb90a05b234ff51" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open Configuration API Key.gvi" StoragePath="Open Configuration API Key.gvi" />
+						<SourceFileReference Id="c9731b6c1640438aa8615638ff22b694" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open Configuration Auto (Custom).gvi" StoragePath="Open Configuration Auto (Custom).gvi" />
+						<SourceFileReference Id="48f1c5b8d13349fea92b6032c1ede921" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open Configuration Auto (Desktop).gvi" StoragePath="Open Configuration Auto (Desktop).gvi" />
+						<SourceFileReference Id="d23fb4855e904436bb14219eabc19977" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open Configuration Auto.gvi" StoragePath="Open Configuration Auto.gvi" />
+						<SourceFileReference Id="6d23aaaf97074f64b5fe8e72cf1c2c9f" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open Configuration.gvi" StoragePath="Open Configuration.gvi" />
+						<SourceFileReference Id="51a902a11fc048529d20a8e368c9e920" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open Default Configuration.gvi" StoragePath="Open Default Configuration.gvi" />
+						<SourceFileReference Id="b1d19589e763465eace782ec4a79e753" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Open Session with Credentials.gvi" StoragePath="Open Session with Credentials.gvi" />
+						<SourceFileReference Id="d4931bdfa4b84133a9163d3486ff8895" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Read Configuration File.gvi" StoragePath="Read Configuration File.gvi" />
+						<SourceFileReference Id="548d8b231c0b4bc4b503a8bcd6b9547c" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Report HTTP Library Not Found Error.gvi" StoragePath="Report HTTP Library Not Found Error.gvi" />
+						<SourceFileReference Id="c477cb26fdb44c91b1a1b00a0a75a8b2" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Validate Auto Configuration.gvi" StoragePath="Validate Auto Configuration.gvi" />
+						<FileReference Bindings=".upgrade" Id="283ed0bdae9e419dac115e7776771d79" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="NI.SL.Configuration.upgrade" StoragePath="NI.SL.Configuration.upgrade" />
+					</NameScopingEnvoy>
+				</NameScopingEnvoy>
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="4538b4942350423d86f12fd01809d361" Name="NI.SL.Configuration.gcomp" NameTracksFileName="True">
+			<ContentReference ContentIdentifier="cfdf6d4b6a054796bf0829d1f1d47041" Id="2fb01876ccd8458e96da592cfbf128b1" Name="Default" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

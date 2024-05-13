@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="11D8E755E04F31A8160B29457DAE2EFAA3C933B3D578F31534172A2848F8BA98B0A3D7D8F43307F5461F8A15BA325D2C53CA7E04C2FB438C7E3CDE878CA2B3E3" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.49573" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.49573" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.49573" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.49573" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.49573" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@f38611b9961843fa9ac64863eaa141e8" Id="d46ea8522c72477db7cf3f5d7f21de21" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="2a816ed178e94234a097f4aa79f73b92" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="5d131243ae304918aef615c1e2752b80" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4f5081b277a4554a5a55f84d065a548" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="baadb4abc68d4ec8aae32ad0a7a945d1" IsHitTestVisible="[bool]False" Left="[float]0" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="5f56d6073a114b0f84721ea3b61ca301" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<Image Height="[float]30" Id="89cba9e1818d4cd993b897aa08e15a71" Left="[float]5" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD+SURBVEhLxZCLDcIwEEPZif03YKfixKnrXH6iastTVJ6d40R5vd6fu46HbcdLP37VjsVGNtmoM58ZrsbBna4penrkUaNSDWPnvw6jXZGHJ6UcGS+AN+rVEL/tPtMpH805Jk6fG8Gvu4k/rS7vtb9ZCTkWm770YrWLL5ovJYvVxGPrIxarXXzXci/4bTVRM2c9cZoHV/OVQXBFd9CNpA71HVATZBSdWGHI5+RB0lBGpVzETPw7XRlFp6owQUquv+NXQfJNgiWpwrU8sjq8kUc6oHspDwLMMvK5tFGS60Q1IfEJMhrwiCeFHBOCUX1X5pHEykUOvJd0Swo47GK27QthmU8UH4MLpwAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@f38611b9961843fa9ac64863eaa141e8" Id="d42f5881bfb54b999ca00b69ba16e345" Name="action">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="3355a5aa0e6c442a8bb324213ef7e5cb" LazyInitialize="True" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="da431d9cffc647c38e6af5d236b2c239" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="46a2e47bd0e644649b9679b9e60572ee" Name="Default Refcount Store Action.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="703a825ccbbe45b1ad449ddf50b7595a" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition Id="83722a56bb3d4e1b8a894560dc0719f9" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" Enabled="[bool]True" Height="[float]24" Id="af8a1217354d4f539782f8e8ce690bb4" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]49a4395902a544128c9eddb612f5fb60" Left="[float]100" TabIndex="[int]0" TextAlignment="[TextAlignment]Left" Top="[float]30" Value="{DataItemBinding Id=d42f5881bfb54b999ca00b69ba16e345}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]175" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Create new generation" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Check out generation" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Check in existing" Value="[ushort]2" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Id="49a4395902a544128c9eddb612f5fb60" LabelOwner="[UIModel]af8a1217354d4f539782f8e8ce690bb4" Left="[float]100" Text="[string]action" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="f38611b9961843fa9ac64863eaa141e8">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Create new generation" />
+					<EnumerationMember Value="1" Name="Check out generation" />
+					<EnumerationMember Value="2" Name="Check in existing" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

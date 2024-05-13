@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="E947E46CE3067F8CA59B769C65743EB3FE181A8E027D857B117CC414ABF018A12C871D1FEDA9469A85767EAD0684FB863E67A640D6A81733B03BB1273BAB6853" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.49573" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.49573" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.49573" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.49573" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.49573" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@9eb6fa73fd5c40ab9e4eb719e630561c" Id="3283a6ba59f44fb3bc3f74bd13c1588b" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="a99911695904aff9cdbf2e08ff88581" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="76b0b0b2c40c4bce9e9a43f1f93c6f7f" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="ec66d474b3d44936b47ea35fef189474" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="bbcf272280324a19b94a85d0c3d576ee" IsHitTestVisible="[bool]False" Left="[float]0" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6a15fd14da9b4497850c0eb438a22cc1" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<Image Height="[float]30" Id="f03f1eebd0f7490693f4bca40e9bfb17" Left="[float]5" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD2SURBVEhLvZALkoMwDEO5U+9/g96JCpQKxXYy/QBvPK4kG89ml+XxvKrcrG889PJRXouJ1OSiar4zPI3CTGMKdbcsJQqV0Bb/67BaCunQKVpJcQA8Ua6E+LTsW7WfVMfGz3Uh+Osu4t7TegrF/raNiS4pBtrOAsynTpFiVSihAB4S2kx9eiRAGZYU4wtPn8Utp/FAf6PbIPbJhpIQku4biWwl1ElORIvCTNa/RA+C2jsF6TYkPrSgXCDdUjcwG4Qs8BGhBYc6ndtPt7fZ89XJtpRsoE6BPqDwnm3JcOaf+UXiljrz9WkKMrkL/j1Nmu8Znv6XdX0Bqldm/GYLFl0AAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@9eb6fa73fd5c40ab9e4eb719e630561c" Id="41530764df8a4fd2a9ab968d6d418d96" Name="HTTP Configuration">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>""</Field1>
+					<Field2>""</Field2>
+					<Field3>""</Field3>
+					<Field4>
+						<Path a="1" />
+					</Field4>
+					<Field5>
+						<Path a="1" />
+					</Field5>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="3c69d88643c048dab01f5a62f7a75b9d" LazyInitialize="True" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="37981a14055a4c44b776212402c0f03e" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="e6fd900ad8974158bbcaf4ea3f6b4c2e" Name="Auto Configuration.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="461f017a4c1b4ed59b373267cbce3720" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="da497fed40c440d7a112a7b31e7fcd41" xmlns="http://www.ni.com/MocCommon">
+					<Label Id="8169252b5a0340fa8c714c038e02c85e" LabelOwner="[UIModel]e4280af07e9645e1996a0763631dd175" Left="[float]100" Text="[string]HTTP Configuration" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+					<Cluster AutoArrange="[AutoArrange]ArrangeVertically" ClusterType="[Type]@9eb6fa73fd5c40ab9e4eb719e630561c" Enabled="[bool]True" Height="[float]268" Id="e4280af07e9645e1996a0763631dd175" IsTabStop="[bool]True" Label="[UIModel]8169252b5a0340fa8c714c038e02c85e" Left="[float]100" TabIndex="[int]0" Top="[float]30" Value="{DataItemBinding Id=41530764df8a4fd2a9ab968d6d418d96}" Width="[float]116" xmlns="http://www.ni.com/PanelCommon">
+						<StringControl AcceptsReturn="[bool]True" Enabled="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="7cdc7f4ba3ba48b9b152868ce14d4673" IsTabStop="[bool]True" Label="[UIModel]790d1f828c2a4a1a90ad99b0ffda34ed" Left="[float]4" TabIndex="[int]0" Text="{ClusterBinding FieldName=id}" TextAlignment="[TextAlignment]Left" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]24" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="790d1f828c2a4a1a90ad99b0ffda34ed" LabelOwner="[UIModel]7cdc7f4ba3ba48b9b152868ce14d4673" Left="[float]4" Text="[string]id" Top="[float]4" />
+						<StringControl AcceptsReturn="[bool]True" Enabled="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="331396e52e4143498176451700ec948e" IsTabStop="[bool]True" Label="[UIModel]d2e71f432d8a4d04b2793a1c153a4479" Left="[float]4" TabIndex="[int]1" Text="{ClusterBinding FieldName=uri}" TextAlignment="[TextAlignment]Left" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]76" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="d2e71f432d8a4d04b2793a1c153a4479" LabelOwner="[UIModel]331396e52e4143498176451700ec948e" Left="[float]4" Text="[string]uri" Top="[float]56" />
+						<StringControl AcceptsReturn="[bool]True" Enabled="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="f8ddd7dff69c42d3a0ce5ca082c559f1" IsTabStop="[bool]True" Label="[UIModel]e8dc88777e1e4250a4dbc9a6c1b99349" Left="[float]4" TabIndex="[int]2" Text="{ClusterBinding FieldName=api\ key}" TextAlignment="[TextAlignment]Left" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]128" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="e8dc88777e1e4250a4dbc9a6c1b99349" LabelOwner="[UIModel]f8ddd7dff69c42d3a0ce5ca082c559f1" Left="[float]4" Text="[string]api key" Top="[float]108" />
+						<PathSelector BrowseOption="[BrowseOption]ExistingFiles" Enabled="[bool]True" Height="[float]24" Id="ee26e09c87734502974962f762b6921a" IsTabStop="[bool]True" Label="[UIModel]f3ed3e8a6b840efbc4c10fa29618d29" Left="[float]4" Path="{ClusterBinding FieldName=cert\ path}" TabIndex="[int]3" TextAlignment="[TextAlignment]Left" Top="[float]180" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="f3ed3e8a6b840efbc4c10fa29618d29" LabelOwner="[UIModel]ee26e09c87734502974962f762b6921a" Left="[float]4" Text="[string]cert path" Top="[float]160" />
+						<PathSelector BrowseOption="[BrowseOption]ExistingFiles" Enabled="[bool]True" Height="[float]24" Id="c0a63234045c42499345b30a85ba4456" IsTabStop="[bool]True" Label="[UIModel]3a43c896ed5447389abab449b91a2522" Left="[float]4" Path="{ClusterBinding FieldName=owning\ file}" TabIndex="[int]4" TextAlignment="[TextAlignment]Left" Top="[float]232" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Foreground="[SMColor]#ff000000" Id="3a43c896ed5447389abab449b91a2522" LabelOwner="[UIModel]c0a63234045c42499345b30a85ba4456" Left="[float]4" Text="[string]owning file" Top="[float]212" />
+					</Cluster>
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="9eb6fa73fd5c40ab9e4eb719e630561c">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="id" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="uri" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="api key" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="cert path" DataType="Path" />
+					<Field FieldAccessPolicy="ReadWrite" Name="owning file" DataType="Path" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
