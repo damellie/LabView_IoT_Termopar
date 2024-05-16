@@ -1,0 +1,279 @@
+\section{Objetivos}
+\begin{itemize}
+    \item Desarrollar un instrumento de medición de temperatura para supervisar la temperatura de una incubadora.
+    \item Adquirir datos de temperatura mediante un termopar y un microcontrolador Arduino UNO.
+    \item Aprender a transferir datos desde Arduino UNO a una aplicación VI mediante comunicación serial.
+    \item Realizar una aplicación en LabVIEW para la adquisición de datos de un microcontrolador, despliegue y visualización de estos en un VI.
+\end{itemize}
+
+\section{Material y equipo}
+\begin{itemize}
+    \item Módulo LCD1602
+    \item Termopar tipo K con módulo MAX6675
+    \item Microcontrolador Arduino UNO con cable USB
+    \item Interruptor de dos pines
+    \item Panel de MDF
+    \item Computadora
+    \item Software de programación gráfica LabVIEW 15
+\end{itemize}
+
+\section{Introducción}
+
+Como proyecto se realizó un sistema para la medición de temperatura con el objetivo de realizar mediciones en el Laboratorio de Inocuidad de la Facultad de Veterinaria de la UNAM.El fenómeno físico de interés en el proyecto es la temperatura, y el medio de transducción que se utilizará en para medir el fenómeno físico es un termo par tipo K.\\
+
+En la sección de introducción veremos algunos conceptos pertinentes al desarrollo del proyecto para una mejor comprensión. Pasando al desarrollo y resultados tendremos los pasos realizados para cumplir los objetivos. En esta se explicara mas a detalle el funcionamiento y se añadirán los códigos elaborados.Finalmente se discutirá un poco acerca de la elaboración del proyecto y verificaremos que los objetivos se hayan cumplido en su totalidad, de no ser el caso analizar cuales fueron las fallas y poder dar una explicación.
+
+\subsection{Dispositivo transductor}
+
+Un transductor es un dispositivo capaz de transformar o convertir una determinada manifestación de energía de entrada, en otra de diferente naturaleza.
+
+Un termopar es un dispositivo formado por la unión de dos metales distintos que produce un voltaje (efecto Seebeck), que es función de la diferencia de temperatura entre uno de los extremos denominado “punto caliente” o unión caliente o de medida y el otro denominado “punto frío” o unión fría o de referencia.
+
+Este tipo de sensores son ampliamente utilizados en aplicaciones de instrumentación industrial debido a su bajo costo y su amplio rango de temperaturas. La desventaja de los termopar es su exactitud, ya que es difícil que el error sea menor a 1 grado centígrado.
+
+\subsection{Acondicionamiento y conversión analógico-digital}
+
+El acondicionamiento de las señales y la conversión analógica- digital se realizará con el módulo MAX6675.
+
+El circuito integrado MAX6675 es un convertidor analógico a digital especializado para termopar tipo K. Integra un convertidor analógico a digital (ADC) de 12 bits, también integra la compensación de unión fría, un controlador digital y una interfaz serial digital compatible con SPI y la lógica de control asociada a esta. Está diseñado para trabajar en conjunto con un microcontrolador externo o cualquier otro dispositivo inteligente que provee la lógica necesaria para el control o monitoreo de procesos térmicos.
+
+\subsection{Transferencia de datos al microcontrolador}
+
+Después de realizar el acondicionamiento y conversión analógico-digital de la variable física con el módulo 6675, se utilizará el microcontrolador Arduino UNO para adquirir datos del termopar tipo K, que representan valores de temperatura del medio.
+
+El microcontrolador también se utilizará para transferir los valores temperatura a una pantalla LCD para el despliegue de la información al usuario. De igual forma, se utilizará para transferir de manera constante los datos adquiridos a la aplicación de LabVIEW.
+
+\subsection{Aplicación VI de LabVIEW}
+
+Se realizará una aplicación VI para el despliegue de los datos, que servirá para generar un registro de datos, visualizarlos y analizarlos.
+
+La aplicación permite realizar la lectura de datos digitales desde el microcontrolador mediante el puerto serie.
+
+la interfaz de usuario cuenta con elementos que nos permiten iniciar el funcionamiento del sistema de manera remota, visualizar los datos en una gráfica, establecer el puerto de comunicación, configurar la tasa de muestreo y mostrar el valor de temperatura recién muestreado. Además, la interfaz nos permitirá crear un archivo compatible con Excel para tener un registro de las mediciones obtenidas en el experimento cuando la interfaz está en funcionamiento, de tal forma que se tiene la opción de realizar un procesamiento más complejo en una hoja de cálculo, que permita analizar mejor la información, por ejemplo, obtener el promedio de las mediciones obtenidas.
+
+
+\section{Desarrollo y Resultados}
+
+Partimos con el Diseño de la parte física el cual contendrá los elementos mencionados en los materiales requeridos. Al realizar las mediciones y los cortes se llegó a la estructura que se puede ver en las figuras \ref{cajaFrontal}, \ref{cajaLateral} y \ref{cajaTrasera}
+
+\begin{figure}[!h]
+\begin{subfigure}[h]{0.35\linewidth}
+\includegraphics[width=\linewidth]{Proyecto/Caja/cajaFrontal.jpg}
+\caption{Estructura vista desde la parte Frontal, Se tiene la pantalla principal donde se mostraran las lecturas de temperatura.}
+\label{cajaFrontal}
+\end{subfigure}
+\hfill
+\begin{subfigure}[h]{0.35\linewidth}
+\includegraphics[width=\linewidth]{Proyecto/Caja/cajaLateral.jpg}
+\caption{Estructura vista desde la parte lateral. En esta vista se puede ver el botón que nos permitirá activar el sistema para empezar las mediciones.}
+ \label{cajaLateral}
+\end{subfigure}%
+\caption{This is a figure with two subfigures}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.35\textwidth]{Proyecto/Caja/cajaTrasera.jpg}
+    \caption{Estructura vista desde la parte Trasera. En esta parte tendremos dos espacios que serán para la conexión del puerto Serial para el Arduino y otro espacio para el termopar.}
+    \label{cajaTrasera}
+\end{figure}
+\clearpage
+El siguiente paso consistió en la prueba del TermoPar, la pantalla LCD y el botón para la activación del proceso. Para esto se utilizó la placa Arduino UNO (Figura \ref{arduino}) y el editor de texto Arduino IDE para la programación de estos tres elementos.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{Proyecto/ArduinoUNO.png}
+\caption{Arduino UNO}
+\label{arduino}
+\end{figure}
+
+El código final hecho en Arduino se muestra a continuación:
+%% language specific settings:
+\lstdefinestyle{Arduino}{%
+    language = Octave,
+    keywords={void, int boolean},%                 define keywords
+    morecomment=[l]{//},%             treat // as comments
+    morecomment=[s]{/*}{*/},%         define /* ... */ comments
+    emph={HIGH, OUTPUT, LOW}%        keywords to emphasize
+}
+
+\begin{lstlisting}[label={list:first}, style=Arduino, caption=PFinalIV.ino]
+
+#include <LiquidCrystal_I2C.h>
+#include <ezButton.h>
+#include "max6675.h"
+
+ezButton button(7);
+
+int thermoDO = 4;
+int thermoCS = 5;
+int thermoCLK = 6;
+int vccPin = 3;
+int gndPin = 2;
+float temperatura;
+
+MAX6675 thermocouple(thermoCLK, thermoCS, thermoDO);
+LiquidCrystal_I2C lcd(0x27,20,4);  // set the LCD address to 0x27 for a 16 chars and 2 line display
+// make a cute degree symbol
+uint8_t degree[8]  = {140,146,146,140,128,128,128,128};
+
+void setup()
+{
+  Serial.begin(9600);
+  button.setDebounceTime(50); // set debounce time to 50 milliseconds
+  lcd.init();                      // initialize the lcd 
+  // Print a message to the LCD.
+  lcd.backlight();
+  // wait for MAX chip to stabilize
+  pinMode(vccPin, OUTPUT); digitalWrite(vccPin, HIGH);
+  pinMode(gndPin, OUTPUT); digitalWrite(gndPin, LOW);
+  lcd.begin(16, 2);
+  lcd.createChar(0, degree);
+  // wait for MAX chip to stabilize
+  delay(1000);
+}
+
+
+void loop()
+{
+   button.loop(); // MUST call the loop() function first
+   // MUST call the loop() function first){
+  if(button.getState()==0){
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print("Temperatura:");
+    // go to line #1
+    lcd.setCursor(0,1);
+   // Serial.println("The button is pressed");
+    temperatura = thermocouple.readCelsius();
+    lcd.print(temperatura);
+    Serial.print(String(temperatura));
+    Serial.print("\n");
+  #if ARDUINO >= 100
+    lcd.write((byte)0);
+  #else
+    lcd.print(0, BYTE);
+  #endif
+    lcd.print("C");
+    delay(1000);
+  }
+  if(button.getState()==1){
+     //Serial.println("The button is released");
+     lcd.clear();
+     lcd.setCursor(0,0);
+     lcd.print("Sistema Apagado");
+     delay(300);
+  }
+  
+}
+\end{lstlisting}
+
+Teniendo al sistema funcionando con el código previo, lo que resta es diseñar la interfaz en LabView en donde podamos visualizar las lecturas que se mandan mediante el puerto Serial. Primeramente se tiene el Panel Frontal el cual está dado por la figura \ref{FrontPanel}
+
+\clearpage
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.99\textwidth]{Proyecto/software/FrontPanel2.pdf}
+\caption{Interfaz de usuario principal.}
+\label{FrontPanel}
+\end{figure}
+\clearpage
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.99\textwidth]{Proyecto/software/BlockDiagram.PNG}
+\caption{Diagrama de bloques completo.}
+\label{FrontPanel}
+\end{figure}
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.99\textwidth]{Proyecto/software/While1.PNG}
+\caption{Primer ciclo while. Este ciclo nos permitirá esperar a que el usuario pulse el botón de inicio para salir de este ciclo y dar la condición True de la estructura case que se verá en la siguiente captura.}
+\label{while1}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.99\textwidth]{Proyecto/software/Case.PNG}
+\caption{Estructura case. Al presionar el botón de inicio se saldrá del primer ciclo while y entraremos a la estructura case en el caso True. En este caso tendremos toda la programación. Inicialmente tendremos los bloques para establecer el puerto y la comunicación con el arduino y contaremos con un segundo ciclo while el cual se ejecutará siempre y cuando no se pulse el botón de Stop.}
+\label{case}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.95\textwidth]{Proyecto/software/while2.PNG}
+\caption{Segundo ciclo while. En este ciclo tendremos toda la estructura del proyecto. Tendremos la parte de la lectura del valor del sensor mediante los bloques de VISA. Se leerá el puerto asignado y se desplegarán los valores en una gráfica. Además en la parte inferior del ciclo tendremos la implementación del protocolo http para mandar el dato de temperatura a la pagina Oficial de UBIDOTS en donde mediante una API key podremos establecer la conexión. Estos datos podran ser consultados desde la computadora o celular con la aplicación oficial de UBIDOTS.}
+\label{while2}
+\end{figure}
+\clearpage
+
+De la figura \ref{while2} se muestra además en la parte derecha las instrucciones correspondientes para escribir los valores de temperatura en una hoja de cálculo, sin embargo al usar labView desde una maquina virtual en donde no se tiene instalado Excel, no fue posible crear esta parte. Sin embargo al ser enviados los datos al Dashboard creado en la página de UBIDOTS que se mostrará mas adelante podremos exportar los datos enviados. Estos datos serán enviados a nuestro correo en una carpeta comprimida la cual contendrá un excel con todos los datos almacenados.\\
+
+\subsection{Resultados}
+
+Dentro del laboratorio se realizaron las mediciones de temperatura de la incubadora. Durante el proceso se tomaron algunas fotografias las cuales se muestran  a continaución
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.69\textwidth]{Proyecto/Caja/funcionamiento1.jpeg}
+\caption{Implementación del proyecto.}
+\label{f1}
+\end{figure}
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.99\textwidth]{Proyecto/Caja/funcionamiento2.jpeg}
+\caption{Implementación del proyecto.}
+\label{f1}
+\end{figure}
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.99\textwidth]{Proyecto/Caja/funcionamiento3.jpeg}
+\caption{Conexión con la computadora }
+\label{f1}
+\end{figure}
+
+\clearpage
+
+Finalmente nuestro Dashboard creado en UBIDOTS se observa en la figura \ref{dashboard} y \ref{dashboard2}.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.99\textwidth]{Proyecto/ubidots/UBIDOTS.PNG}
+\caption{Dashboard creado para la visualización de los datos de forma remota. La escala en x  de la gráfica corresponde a la fecha de las mediciones. Las mediciones fueron hechas el día 13 de mayo entre las 4 y 6 de la tarde. }
+\label{dashboard}
+\end{figure}
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.99\textwidth]{Proyecto/ubidots/UBIDOTS2.PNG}
+\caption{Gadgets del dasboard restantes. En este podremos ver el valor máximo de temperatura, el último medido y el promedio.}
+\label{dashboard2}
+\end{figure}
+
+\section{Conclusiones}
+
+El desarrollo de proyecto abarcó en su mayoría los temas vistos durante el transcurso del semestre así como también se aprendió material extra para enriquecer nuestro proyecto.En este proyecto pusimos en práctica los conocimientos adquiridos en las prácticas del laboratorio de Instrumentación Virtual y nos permitió enfocarlos a una aplicación específica, que en este caso fue el monitoreo de la temperatura de una incubadora.\\
+
+El proyecto en funcionamiento nos permitió realizar las mediciones de temperatura del ambiente y transmitir los datos a diferentes medios de despliegue y procesamiento, como la pantalla LCD, la aplicación de LabVIEW y la pagina web de UBIDOTS. Identificamos que es importante proporcionar al usuario diferentes opciones para el procesamiento y despliegue de los datos, ya que así se brindan más opciones de accesibilidad y se facilita la manipulación de los datos. De igual forma, identificamos que la elección del medio de despliegue depende de los requerimientos de la aplicación en la que se use el instrumento de medición. Por ejemplo, de los tres medios de despliegue utilizados, la pantalla LCD está enfocada a simplemente visualizar los datos en tiempo real. Por otro lado, en LabVIEW y UBITDOTS se dispone de más elementos, que permiten crear gráficas y obener estadísticas de los datos, como el valor máximo, el valor mínimo y el promedio. De estos medios de despliegue podemos destacar el uso de UBIDDOTS, ya que facilita el acceso a la información debido a que se puede consultar de manera web.
+
+Al poner en funcionamiento el instrumento de medición no se presentaron inconvenientes, las mediciones se realizaron de manera correcta y el despliegue de los datos, tanto en la pantalla LCD como gráficamente fue exitoso, al igual que la creación del archivo para registrar los datos. El principal reto al que nos enfrentamos fue el tipo de sistema en el que se utilizó el instrumento, debido a que el objetivo era realizar mediciones de temperatura en tiempo real de una incubadora para facilitar establecer una temperatura constante mediante la perilla de control de la incubadora. Sin embargo, fue difícil llevar a cabo esta tarea, ya que se desconocía el tipo de control que llevaba a cabo la incubadora. Asumimos que era un control similar al ON-OFF, sin embargo, era muy complicado controlar la temperatura, ya que el sistema era muy lento y para disminuir la temperatura, con el objetivo que esta llegara al valor deseado, era necesario hacerlo de forma manual.
+
+En el desarrollo del proyecto realizamos la adquisición de datos, la conversión de señales analógicas, al igual que la transferencia de datos mediante puerto serial y usando los bloques VISA Serial de LabVIEW, por lo que los objetivos del proyecto se cumplieron de manera satisfactoria. Para acceder a los archivos del proyecto se puede dar click al siguiente enlace  de \href{https://github.com/damellie/LabView_IoT_Termopar}{Github}.
+
+\section{Referencias}
+
+\begin{itemize}
+    \item Lajara Vizcaíno, J. R., & Pelegrí Sebastiá, J. (2018). LabVIEW: entorno gráfico de programación (Tercera edición). Alfaomega, Marcombo.
+    \item NI learning center - NI. (s/f). Cbásicos de programación gráfica con LabVIEW. Recuperado el 15 de mayo de 2024, de https://learn.ni.com/learn/article/labview-tutorial-spanish
+\end{itemize}

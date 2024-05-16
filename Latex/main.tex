@@ -1,0 +1,249 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ADOreD report template. %%%
+%%% Author: Bernardo Castro Valerio. %%%
+%%% Date: July 2023.             %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[a4paper,11pt, titlepage, twoside]{article}
+
+%
+\usepackage{titling}
+\title{Instrumentación Virtual}
+\author{}
+\date{12 de febrero de 2024}
+
+\usepackage{lipsum}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+\setlength{\parskip}{4mm}
+\setlength{\footskip}{60pt}
+\setlength{\headheight}{26pt}
+
+\usepackage{subcaption}
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=4cm,left=2.5cm,right=2.5cm]{geometry}
+
+\usepackage[spanish]{babel}
+%% Useful packages
+\usepackage{graphicx} % Required for inserting images
+\usepackage{float}
+\usepackage{eurosym}
+\usepackage{amsmath}
+
+\usepackage{textgreek}
+\usepackage{steinmetz}
+\usepackage{systeme}
+\usepackage{sectsty}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{color} %red, RoyalBlue, blue, yellow, cyan, magenta, black, white
+\usepackage[dvipsnames]{xcolor}
+\usepackage[section]{placeins} %Prevents figures jumping sections
+\usepackage{longtable}
+\usepackage{mathtools}
+\usepackage{commath}
+\usepackage{dtk-logos}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+%\usepackage[firstpage]{draftwatermark}
+\usepackage{transparent}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+
+%% For uploading code Python 
+\usepackage{listings}
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{light-gray}{gray}{0.95}
+
+\renewcommand{\sectionautorefname}{\S}
+
+
+%Code listing style named "mystyle"
+\lstdefinestyle{Python}{
+  backgroundcolor=\color{light-gray}, 
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{violet},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  emph={self,__init__},          
+  emphstyle=\color{red},
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\lstdefinestyle{Matlab}{
+    %basicstyle=\color{red},
+    backgroundcolor=\color{light-gray}, 
+    commentstyle=\color{codegreen},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    basicstyle=\ttfamily\footnotesize,%
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{codepurple},
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=5pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{blue}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+%Arduino code PRoyecto IV LAB
+\lstset{%
+  language = Octave,
+  backgroundcolor=\color{white},   
+  basicstyle=\footnotesize\ttfamily,       
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                   
+  commentstyle=\color{gray},    
+  deletekeywords={...},           
+  escapeinside={\%*}{*)},          
+  extendedchars=true,              
+  frame=single,                    
+  keepspaces=true,                 
+  keywordstyle=\color{orange},       
+  morekeywords={*,...},            
+  numbers=left,                    
+  numbersep=5pt,                   
+  numberstyle=\footnotesize\color{gray}, 
+  rulecolor=\color{black},         
+  rulesepcolor=\color{blue},
+  showspaces=false,                
+  showstringspaces=false,          
+  showtabs=false,                  
+  stepnumber=2,                    
+  stringstyle=\color{orange},    
+  tabsize=2,                       
+  title=\lstname,
+  emphstyle=\bfseries\color{blue}%  style for emph={} 
+} 
+
+%"mystyle" code listing set
+
+
+
+
+%%Titles colors
+\chapterfont{\color{Blue}}  % sets colour of chapters
+\sectionfont{\color{Blue}}  % sets colour of sections
+\subsectionfont{\color{RoyalBlue}}
+
+
+\usepackage[sorting=none]{biblatex}
+\addbibresource{sources.bib}
+
+%Comando para limpiar la pagina cada que se cree una nueva seccion
+%\newcommand{\sectionbreak}{\clearpage}
+
+%% Header and footer 
+%E/O (even/odd), L/C/R (left/center/right) y H/F (header/footer))
+\fancyhf{}
+\fancyhead[ER]{\includegraphics[scale=0.15]{Practicas/fi02.pdf}}
+\fancyhead[OL]{ Semestre 2024-2}
+\fancyhf[ELH, ORH]{ \thepage}
+\fancyfoot[L]{ \textcolor{gray}{Laboratorio de Instrumentación Virtual - Reporte de Proyecto Final}}
+%\fancyfoot[R]{ \\
+%\transparent{0.8}\includegraphics[scale=0.1]{eu_flag.png}}
+
+\fancyfoot[R]{\raisebox{-0.8\height}{\transparent{0.8}\includegraphics[scale=0.1]{Practicas/DIE.pdf}}}
+
+\pagestyle{fancy}
+\raggedbottom
+
+
+
+\begin{document}
+
+\begin{titlepage}
+
+
+
+ \includegraphics[height=2 cm,keepaspectratio]{Practicas/UNAM-Logo.pdf}   \includegraphics[height=2 cm,keepaspectratio]{Practicas/OIP.pdf}\hfill\includegraphics[height=2 cm,keepaspectratio]{Practicas/UNAM.pdf}
+
+ 
+  \vspace{40mm}
+    \hspace{2mm}
+\centering
+    {\Huge \textbf{Proyecto Final}}\\
+    \vspace{5mm}
+    {\Large \textbf{Sistema de Medición de temperatura}}\\
+    \Large \textbf{López Sánchez Julio Adán : 31700951-2}\\
+    \Large \textbf{Carmona López Damian Eliab : 31715381-1}\\
+    \vspace{20mm}
+    \Huge \textcolor{Blue}{\textbf{\thetitle}}\\
+    \vspace{10mm}
+    \Large\textbf{Reporte de Práctica:}\\
+    \vspace{10mm}
+    \Large\today\\  %Si e lloc del dia de la darrera edició es vol una data fixa, elimineu \today i poseu la data
+    
+    %\vspace{20mm}
+    \hspace{2mm}
+    \theauthor
+
+\begin{tabular}{|c|l|r|}
+\hline
+\textbf{No} & \textbf{Reporte} & \textbf{Puntos} \\
+\hline 
+\hline
+  1 &  Índice & /0.5 \\
+\hline
+ 2 &   Objetivos & /0.5 \\
+ \hline
+  3 &    Introducción  & /1 \\
+  \hline
+   4 &    Desarrollo y Resultados & / 5 \\
+   \hline
+    5 &    Conclusiones  & /2 \\
+    \hline
+  6 &    Referencias  & /1 \\
+\hline
+\hline
+  &    \textbf{Total}  & /100 \\
+\hline
+\end{tabular}\\
+
+    \end{titlepage}
+%\maketitle
+
+\tableofcontents
+\newpage
+%\listoffigures
+%\listoftables
+%\sectionbreak
+%\input{Practicas/P1/practica1}
+%\input{Practicas/P2/Practica2}
+%\input{Practicas/P3/Practica 3}
+%\input{Practicas/P4/Practica 4}
+%\input{Practicas/P5/Practica 5}
+\input{Proyecto/proyecto}
+\addcontentsline{toc}{section}{References}
+ \printbibliography
+%
+
+%\section*{Annex}
+%\addcontentsline{toc}{section}{Annex}
+
+%\sectionbreak
+
+\end{document}
