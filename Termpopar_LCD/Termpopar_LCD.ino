@@ -7,7 +7,6 @@
 
 ezButton button(7);
 
-
 int thermoDO = 4;
 int thermoCS = 5;
 int thermoCLK = 6;
@@ -47,7 +46,7 @@ void loop()
     lcd.print("Temperatura:");
     // go to line #1
     lcd.setCursor(0,1);
-    Serial.println("The button is pressed");
+   // Serial.println("The button is pressed");
     temperatura = thermocouple.readCelsius();
     lcd.print(temperatura);
     Serial.print(String(temperatura));
@@ -57,11 +56,11 @@ void loop()
   #else
     lcd.print(0, BYTE);
   #endif
-    lcd.print("C ");
+    lcd.print("C");
     delay(1000);
   }
   if(button.getState()==1){
-     Serial.println("The button is released");
+     //Serial.println("The button is released");
      lcd.clear();
      lcd.setCursor(0,0);
      lcd.print("Sistema Apagado");
